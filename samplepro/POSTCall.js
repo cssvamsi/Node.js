@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
-app.post('/', function(req,res) {
+app.post('D/hello world.txt', function(req,res) {
     
     fs.writeFile('hello world.txt', 'hi', function(err) {
         if(err){ response=err;}
